@@ -22,27 +22,25 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <nav>
-          <img
-            src="images/logo/Aleksandar_Vukasovic-logos-blue-removebg-preview.png"
-            alt="logo"
-            class="myLogo"
-          />
-          <ul class="navbar">
-            <li><a href="#about">ABOUT ME</a></li>
-            <li><a href="#myProjects">PROJECTS</a></li>
-            <li><a href="#">RESUME</a></li>
-            <li><a href="#">CONTACT ME</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section class="me">
+      <nav>
+        <img
+          src="images/logo/Aleksandar_Vukasovic-logos-blue-removebg-preview.png"
+          alt="logo"
+          class="myLogo"
+        />
+        <ul class="navbar">
+          <li><a href="#about">ABOUT ME</a></li>
+          <li><a href="#myProjects">PROJECTS</a></li>
+          <li><a href="#">RESUME</a></li>
+          <li><a href="#contact">CONTACT ME</a></li>
+        </ul>
+      </nav>
+      <header class="me">
         <div class="myName">
           <h2>Aleksandar Vukasovic</h2>
           <h4>Front-end Developer</h4>
         </div>
-      </section>
+      </header>
     </div>
     <div style="overflow: hidden">
       <svg
@@ -100,7 +98,7 @@
           </div>
           <h4 class="touch">Let's keep in touch!</h4>
           <div class="buttons">
-            <button class="btn">CONTACT ME</button>
+            <button class="btn"><a href="#contact">CONTACT ME</a></button>
             <!--  <button class="btn">RESUME</button> -->
           </div>
         </div>
@@ -112,7 +110,7 @@
         <div class="svg svg2">
           <h3>&#10094; my projects &#10095;</h3>
           <img
-            src="images/ilustrations/undraw_Responsive_re_e1nn.svg"
+            src="images/ilustrations/undraw_heatmap_uyye.svg"
             alt="about me illustr."
             class="pictSvg"
           />
@@ -146,6 +144,80 @@
               ></a>
             </div>
           </div>
+        </div>
+      </section>
+      <div class="svg svg2">
+        <h3>&#10094; contact me &#10095;</h3>
+        <img
+          src="images/ilustrations/undraw_message_sent_1030.svg"
+          alt="about me illustr."
+          class="pictSvg"
+        />
+      </div>
+      <section id="contact">
+        <div class="left">
+          <div class="content">
+            <div class="logo">
+              <img
+                src="images/logo/Aleksandar_Vukasovic-logos-blue-removebg-preview.png"
+                alt="logo"
+              />
+            </div>
+            <div class="image"></div>
+          </div>
+        </div>
+
+        <div class="right">
+          <form
+            id="fs-frm"
+            name="simple-contact-form"
+            accept-charset="utf-8"
+            action="https://formspree.io/f/xoqybpno"
+            method="post"
+          >
+            <h3 class="title">Send me a message</h3>
+            <div>
+              <label for="name">Full Name</label>
+              <i class="fas fa-user-circle fam"></i>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div>
+              <label for="email">Email Adress</label>
+              <i class="far fa-envelope fam"></i>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="10"
+                placeholder="Type your message here"
+              ></textarea>
+              <button id="btn" type="submit">Submit &#8594;</button>
+            </div>
+            <div class="contact-icons">
+              <h4>Or contact me here:</h4>
+              <div class="btn2">
+                <a href="#"
+                  ><img src="images/icons/linkendin.svg" alt="link"
+                /></a>
+              </div>
+              <div class="btn3">
+                <a href="#"><img src="images/icons/email.svg" alt="email" /></a>
+              </div>
+            </div>
+          </form>
         </div>
       </section>
     </main>

@@ -16,6 +16,7 @@ body {
 
 .container {
   background-image: url("images/unsBackg.jpg");
+  object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -164,6 +165,11 @@ img:first-child {
   background-color: #242422;
 }
 
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+
 .profile {
   clip-path: circle();
   margin-top: 20px;
@@ -235,4 +241,139 @@ img:first-child {
 .fab:hover,
 .fas:hover {
   color: grey;
+}
+
+/* Contact Form */
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.right {
+  width: 45%;
+  max-width: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  color: #fff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form div input {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid #c4c4c4;
+  padding: 0 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form div textarea {
+  width: 100%;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid #c4c4c4;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #077acc;
+}
+
+form div .fam {
+  color: black;
+  position: absolute;
+  padding: 10px;
+  margin: 0;
+}
+
+#btn {
+  color: #fff;
+  margin-top: 15px;
+  width: 100%;
+  height: 45px;
+  background-color: #077acc;
+  border: 2px solid #077acc;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+}
+form h4 {
+  text-align: center;
+}
+
+#btn:hover {
+  opacity: 0.8;
+}
+
+.btn2,
+.btn3 {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  gap: 15px;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  width: 55%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: linear-gradient(
+    to right bottom,
+    #462bb5,
+    #4747c3,
+    #4e5fce,
+    #5976d8,
+    #6a8cdf,
+    #649eea,
+    #63aff2,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  width: 100%;
+}
+
+.logo img {
+  width: 180px;
+}
+
+.image {
+  background-image: url(images/ilustrations/undraw_Envelope_re_f5j4.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 65%;
 }
