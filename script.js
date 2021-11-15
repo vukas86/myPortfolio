@@ -1,3 +1,7 @@
+const scrollEffect2 = document.querySelector(".btn");
+const sectionContact = document.querySelector("#contact");
+const nav = document.querySelector(".nav_items");
+
 document.querySelector(".navbar").addEventListener("click", function (e) {
   console.log(e);
   e.preventDefault();
@@ -9,9 +13,20 @@ document.querySelector(".navbar").addEventListener("click", function (e) {
   }
 });
 
-const scrollEffect2 = document.querySelector(".btn");
-const sectionContact = document.querySelector("#contact");
-
 scrollEffect2.addEventListener("click", function (e) {
   sectionContact.scrollIntoView({ behavior: "smooth" });
 });
+
+const handleEvent = function (e) {
+  if (e.target.classList.contains("nav_link")) {
+    const link = e.target;
+    const siblings = link.closest(".nav_items").querySelectorAll(".nav_link");
+
+    siblings.forEach((el) => {
+      if (el !== link) el.style.opacity = this;
+    });
+  }
+};
+
+nav.addEventListener("mouseover", handleEvent.bind(0.5));
+nav.addEventListener("mouseout", handleEvent.bind(1));

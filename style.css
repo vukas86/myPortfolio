@@ -24,6 +24,12 @@ body {
   border-bottom: none;
 }
 
+.nav_items {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -55,9 +61,9 @@ nav .navbar > li {
   font-size: 24px;
 }
 
-nav li a:hover {
+/* nav li a:hover {
   color: grey;
-}
+} */
 
 .me {
   width: 30%;
