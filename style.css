@@ -389,3 +389,8 @@ form h4 {
   background-position: center;
   height: 65%;
 }
+
+.section-hidden {
+  opacity: 0;
+  transform: translateY(50px);
+}
