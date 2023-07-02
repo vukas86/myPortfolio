@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -192,7 +193,7 @@ img:first-child {
 .svg2 {
   margin-left: 12%;
   margin-top: 100px;
-  width: 100%;
+  max-width: 100%;
 }
 
 .svg2 h3 {
